@@ -10,8 +10,6 @@ class MainPageLocators:
     order_feed_btn = (By.XPATH, ".//p[text() = 'Лента Заказов']")  # Кнопка лента заказов
     bun_btn = (By.XPATH, ".//span[text() = 'Булки']")  # Кнопка переключения на булки
     sauces_btn = (By.XPATH, ".//span[text() = 'Соусы']")  # Кнопка переключения на соусы
-    bun_tab = (By.XPATH, "//div[contains(@class, 'tab_type_current') and text()='Булки']")
-    sauces_tab = (By.XPATH, "//div[contains(@class, 'tab_type_current') and text()='Соусы']")
     toppings_btn = (By.XPATH, ".//span[text() = 'Начинки']")  # Кнопка переключения на начинки
     place_order_button = (By.XPATH, ".//button[text() = 'Оформить заказ']")  # Кнопка оформить заказ
     sauces = (By.XPATH, ".//h2[text() = 'Соусы']")  # Текст соусы на главной странице
