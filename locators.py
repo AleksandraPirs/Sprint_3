@@ -10,18 +10,14 @@ class MainPageLocators:
     order_feed_btn = (By.XPATH, ".//p[text() = 'Лента Заказов']")  # Кнопка лента заказов
     bun_btn = (By.XPATH, ".//span[text() = 'Булки']")  # Кнопка переключения на булки
     sauces_btn = (By.XPATH, ".//span[text() = 'Соусы']")  # Кнопка переключения на соусы
-    bun_tab = (By.XPATH, "//div[contains(@class, 'tab_type_current') and text()='Булки']")
-    sauces_tab = (By.XPATH, "//div[contains(@class, 'tab_type_current') and text()='Соусы']")
     toppings_btn = (By.XPATH, ".//span[text() = 'Начинки']")  # Кнопка переключения на начинки
     place_order_button = (By.XPATH, ".//button[text() = 'Оформить заказ']")  # Кнопка оформить заказ
     sauces = (By.XPATH, ".//h2[text() = 'Соусы']")  # Текст соусы на главной странице
-    souces_class = (By.XPATH, ".//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Соусы']") # Класс соуса на главной странице
-    sauces_ul = (By.XPATH, "(.//ul[@class = 'BurgerIngredients_ingredients__list__2A-mT'])[2]")  # Выбор соусов на главной странице
-    bun = (By.XPATH, ".//h2[text() = 'Булки']")  # Текст булки на главной странице
-    ban_class = (By.XPATH, ".//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Булки']") # Класс булки на главной странице
+    sauces_class = (By.CLASS_NAME, "tab_tab_type_current__2BEPc") # Класс соуса на главной странице, когда он выбран
+    ban_class = (By.CLASS_NAME, "tab_tab_type_current__2BEPc") # Класс булки на главной странице, когда он выбран
     bun_ul = (By.XPATH, "(.//ul[@class = 'BurgerIngredients_ingredients__list__2A-mT'])[1]")  # Выбор булок на главной странице
-    topping = (By.XPATH, ".//h2[text() = 'Начинки']")  # Текст начинки на главной странице
-    topping_class = (By.XPATH, ".//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Начинки']") # Класс начинки на главной странице
+    topping = (By.XPATH, ".//h2[text() = 'Начинки']") # Текст начинки на главной странице
+    topping_class = (By.CLASS_NAME, "tab_tab_type_current__2BEPc") # Класс начинки на главной странице, когда он выбран
     topping_ul = (By.XPATH, "(.//ul[@class = 'BurgerIngredients_ingredients__list__2A-mT'])[3]")  # Выбор начинок на главной странице
 
 class AuthPageLocators:
